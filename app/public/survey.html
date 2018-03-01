@@ -157,18 +157,7 @@ $("#submit").on("click", function(event) {
         ]
 
     };
-    console.log($("#name").val().trim())
-    console.log($("#photo").val().trim())
-    console.log($("#question1").val().trim())
-    console.log($("#question2").val().trim())
-    console.log($("#question3").val().trim())
-    console.log($("#question4").val().trim())
-    console.log($("#question5").val().trim())
-    console.log($("#question6").val().trim())
-    console.log($("#question7").val().trim())
-    console.log($("#question8").val().trim())
-    console.log($("#question9").val().trim())
-    console.log($("#question10").val().trim())
+
     $.post("/api/new", newMatch)
         .then(function(data) {
 
