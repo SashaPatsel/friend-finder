@@ -6,10 +6,24 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    .submit-style {
+        width: 6%;
+        height: auto;
+        background-color: rgb(20, 120, 230);
+    }
+    </style>
 </head>
 
 <body>
     <div class="container">
+        <form action="/action_page.php">
+            Name:
+            <input type="text" name="name" id="name">
+            <br> Photo:
+            <input type="text" name="photo" id="photo">
+            <br>
+        </form>
         <h2>Question 1</h2>
         <h4>How much do you like the outdoors?</h4>
         <div class="dropdown dropdown-search">
@@ -130,23 +144,37 @@
                 <option value="5">5</option>
             </select>
         </div>
+        <div class="submit-style" id="submit">Submit</div>
 </body>
 <script type="text/javascript">
-  $("#submit").on("click", function(event) {
+$("#submit").on("click", function(event) {
 
-      var newMatch = {
+    var newMatch = {
         name: $("#name").val().trim(),
-        photo: $("#phoneNumber").val().trim(),
+        photo: $("#photo").val().trim(),
         scores: [
-        $("#question1").val().trim(), $("#question2").val().trim(), $("#question3").val().trim(), $("#question4").val().trim(), $("#question5").val().trim(), $("#question1").val().trim(), $("#question6").val().trim(), $("#question7").val().trim(), $("#question8").val().trim(), $("#question9").val().trim(), $("#question10").val().trim()]
+            $("#question1").val().trim(), $("#question2").val().trim(), $("#question3").val().trim(), $("#question4").val().trim(), $("#question5").val().trim(), $("#question1").val().trim(), $("#question6").val().trim(), $("#question7").val().trim(), $("#question8").val().trim(), $("#question9").val().trim(), $("#question10").val().trim()
+        ]
 
-      };
-$.post("/api/new", newMatch)
-    .then(function(data) {
+    };
+    console.log($("#name").val().trim())
+    console.log($("#photo").val().trim())
+    console.log($("#question1").val().trim())
+    console.log($("#question2").val().trim())
+    console.log($("#question3").val().trim())
+    console.log($("#question4").val().trim())
+    console.log($("#question5").val().trim())
+    console.log($("#question6").val().trim())
+    console.log($("#question7").val().trim())
+    console.log($("#question8").val().trim())
+    console.log($("#question9").val().trim())
+    console.log($("#question10").val().trim())
+    $.post("/api/new", newMatch)
+        .then(function(data) {
 
-        console.log(data);
-        alert("Adding customer...");
-    });
+            console.log(data);
+            alert("Adding customer...");
+        });
 })
 </script>
 
