@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Friend Finder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Question 1</h2>
+        <h4>How much do you like the outdoors?</h4>
+        <div class="dropdown dropdown-search">
+            <select name="position" id="question1">
+                <option value="" disabled selected>Answer</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <h2>Question 2</h2>
+        <h4>Hot or cold?</h4>
+        <div class="dropdown dropdown-search">
+            <select name="position" id="question2">
+                <option value="" disabled selected>Answer</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <h2>Question 3</h2>
+        <h4></h4>
+        <div class="dropdown dropdown-search">
+            <select name="position" id="question3">
+                <option value="" disabled selected>Answer</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <h2>Question 4</h2>
+        <h4>question</h4>
+        <div class="dropdown dropdown-search">
+            <select name="position" id="question4">
+                <option value="" disabled selected>Answer</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <h2>Question 5</h2>
+        <h4>question</h4>
+        <div class="dropdown dropdown-search">
+            <select name="position" id="question5">
+                <option value="" disabled selected>Answer</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <h2>Question 6</h2>
+        <h4>question</h4>
+        <div class="dropdown dropdown-search">
+            <select name="position" id="question6">
+                <option value="" disabled selected>Answer</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <h2>Question 7</h2>
+        <h4>question</h4>
+        <div class="dropdown dropdown-search">
+            <select name="position" id="question7">
+                <option value="" disabled selected>Answer</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <h2>Question 8</h2>
+        <h4>question</h4>
+        <div class="dropdown dropdown-search">
+            <select name="position" id="question8">
+                <option value="" disabled selected>Answer</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <h2>Question 9</h2>
+        <h4>question</h4>
+        <div class="dropdown dropdown-search">
+            <select name="position" id="question9">
+                <option value="" disabled selected>Answer</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <h2>Question 10</h2>
+        <h4>question</h4>
+        <div class="dropdown dropdown-search">
+            <select name="position" id="question10">
+                <option value="" disabled selected>Answer</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+</body>
+<script type="text/javascript">
+  $("#submit").on("click", function(event) {
+
+      var newMatch = {
+        name: $("#name").val().trim(),
+        photo: $("#phoneNumber").val().trim(),
+        scores: [
+        $("#question1").val().trim(), $("#question2").val().trim(), $("#question3").val().trim(), $("#question4").val().trim(), $("#question5").val().trim(), $("#question1").val().trim(), $("#question6").val().trim(), $("#question7").val().trim(), $("#question8").val().trim(), $("#question9").val().trim(), $("#question10").val().trim()]
+
+      };
+$.post("/api/new", newMatch)
+    .then(function(data) {
+
+        console.log(data);
+        alert("Adding customer...");
+    });
+})
+</script>
+
+</html>

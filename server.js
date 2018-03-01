@@ -3,11 +3,13 @@ var bodyParser = require('body-parser')
 var path = require("path");
 
 var app = express()
+var port = 
 
-app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "home.html"));
-});
+app.post("/api/new", function(req, res) {
+  
+})
 
-app.get("/survey", function(req, res) {
-  res.sendFile(path.join(__dirname, "survey.html"));
-});
+require("./app/routing/apiRoutes.js")(app)
+require("./app/routing/htmlRoutes.js")(app)
+
+app.listen(port);
