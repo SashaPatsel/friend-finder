@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-Visit the deployed app at https://friend-find-88845.herokuapp.com/, or run it locally through node by navigating to the directory in your terminal and entering the command "node server.js"
+Visit the deployed app at https://friend-find-88845.herokuapp.com/, or run it locally through node by navigating to the directory in your terminal and entering the command "node server.js".
 
 ### Installing
 
