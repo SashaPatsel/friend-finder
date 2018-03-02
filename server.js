@@ -3,8 +3,7 @@ var bodyParser = require('body-parser')
 var path = require("path");
 var express = require("express");
 var app = express()
-var port = 1993
-
+var port = process.env.PORT || 1993;
 
 require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
@@ -49,12 +48,10 @@ app.post("/api/new", function(req, res) {
             theFinalMatch = friends[i].name;
             theFinalPhoto = friends[i].photo;
             sendMatch()
-            // console.log("your match: ", matchName)
+
         }
     }
-    // res.json({ matchName: matchName });
-    // console.log(res)
-    // console.log(res.json({ matchName: matchName }))
+
     console.log("your match: ", matchName)
 })
 

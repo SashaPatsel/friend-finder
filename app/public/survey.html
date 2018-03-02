@@ -183,7 +183,10 @@
                 </div>
             </div>
         </div>
+        <img src="lion.png">
 </body>
+
+
 <script type="text/javascript">
 $("#initModal").modal("show")
 
@@ -228,7 +231,7 @@ function getMatch() {
       console.log("getMatch")
       var matchPic = data[0]
       var matchName = data[1]
-      
+      console.log(matchPic)
       $(".modal-body").html('<img src="'+ matchPic +'"><h2>' + matchName +'</h2>')
     });
 }    
