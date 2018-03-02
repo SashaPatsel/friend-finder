@@ -13,8 +13,9 @@
         height: auto;
         background-color: rgb(20, 120, 230);
     }
+
     .submit-style:hover {
-      opacity: .7;
+        opacity: .7;
     }
     </style>
 </head>
@@ -28,8 +29,8 @@
             <input type="text" name="photo" id="photo">
             <br>
         </form>
-        <h2>Question 1</h2>
-        <h4>How much do you like the outdoors?</h4>
+        <h2>You like the outdoors</h2>
+        <h5>Question 1</h5>
         <div class="dropdown dropdown-search">
             <select name="position" id="question1">
                 <option value="" disabled selected>Answer</option>
@@ -40,8 +41,8 @@
                 <option value="5">5</option>
             </select>
         </div>
-        <h2>Question 2</h2>
-        <h4>Hot or cold?</h4>
+        <h2>Hot or cold?</h2>
+        <h5>Question 2</h5>
         <div class="dropdown dropdown-search">
             <select name="position" id="question2">
                 <option value="" disabled selected>Answer</option>
@@ -52,8 +53,8 @@
                 <option value="5">5(hot)</option>
             </select>
         </div>
-        <h2>Question 3</h2>
-        <h4>You love to code</h4>
+        <h2>You love to code</h2>
+        <h5>Question 3</h5>
         <div class="dropdown dropdown-search">
             <select name="position" id="question3">
                 <option value="" disabled selected>Answer</option>
@@ -64,8 +65,8 @@
                 <option value="5">5</option>
             </select>
         </div>
-        <h2>Question 4</h2>
-        <h4>You are a couch potato</h4>
+        <h2>You are a couch potato</h2>
+        <h5>Question 4</h5>
         <div class="dropdown dropdown-search">
             <select name="position" id="question4">
                 <option value="" disabled selected>Answer</option>
@@ -76,8 +77,8 @@
                 <option value="5">5</option>
             </select>
         </div>
-        <h2>Question 5</h2>
-        <h4>You love excercise</h4>
+        <h2>You love excercise</h2>
+        <h5>Question 5</h5>
         <div class="dropdown dropdown-search">
             <select name="position" id="question5">
                 <option value="" disabled selected>Answer</option>
@@ -88,8 +89,8 @@
                 <option value="5">5</option>
             </select>
         </div>
-        <h2>Question 6</h2>
-        <h4>you have a good memory</h4>
+        <h2>you have a good memory</h2>
+        <h5>Question 6</h5>
         <div class="dropdown dropdown-search">
             <select name="position" id="question6">
                 <option value="" disabled selected>Answer</option>
@@ -100,8 +101,8 @@
                 <option value="5">5</option>
             </select>
         </div>
-        <h2>Question 7</h2>
-        <h4>You laugh often</h4>
+        <h2>You laugh often</h2>
+        <h5>Question 7</h5>
         <div class="dropdown dropdown-search">
             <select name="position" id="question7">
                 <option value="" disabled selected>Answer</option>
@@ -112,8 +113,8 @@
                 <option value="5">5</option>
             </select>
         </div>
-        <h2>Question 8</h2>
-        <h4>You are crazy</h4>
+        <h2>You are crazy</h2>
+        <h5>Question 8</h5>
         <div class="dropdown dropdown-search">
             <select name="position" id="question8">
                 <option value="" disabled selected>Answer</option>
@@ -124,8 +125,8 @@
                 <option value="5">5</option>
             </select>
         </div>
-        <h2>Question 9</h2>
-        <h4>You are patient</h4>
+        <h2>You are patient</h2>
+        <h5>Question 9</h5>
         <div class="dropdown dropdown-search">
             <select name="position" id="question9">
                 <option value="" disabled selected>Answer</option>
@@ -136,8 +137,8 @@
                 <option value="5">5</option>
             </select>
         </div>
-        <h2>Question 10</h2>
-        <h4>You like meeting new people</h4>
+        <h2>You like meeting new people</h2>
+        <h5>Question 10</h5>
         <div class="dropdown dropdown-search">
             <select name="position" id="question10">
                 <option value="" disabled selected>Answer</option>
@@ -149,76 +150,88 @@
             </select>
         </div>
         <div class="submit-style" id="submit">Submit</div>
-
-       <!-- Init Modal-->
-           <div id="initModal" class="modal fade" role="dialog">
-     <div class="modal-dialog">
-
-       <div class="modal-content">
-         <div class="modal-header">
-           <button type="button" class="close" data-dismiss="modal">&times;</button>
-           <h4 class="modal-title">Welcome to the friend-finder survey. Please fill out all the fields to receive your results.</h4>
-           <h3><i>Each question is measure on a scale of 1-5. 1 means you strongly disagree, 5 means you strongly agree</i></h3>
-         </div>
-         <div class="init-modal-body">
-
-         </div>
-         <div class="modal-footer">
-           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-         </div>
-       </div>
-
-     </div>
-   </div>
-
-       <!-- Match Modal-->
-           <div id="myModal" class="modal fade" role="dialog">
-     <div class="modal-dialog">
-
-       <div class="modal-content">
-         <div class="modal-header">
-           <button type="button" class="close" data-dismiss="modal">&times;</button>
-           <h4 class="modal-title">Thank you for filling out our survey. Your Match is...</h4>
-         </div>
-         <div class="init-modal-body">
-
-         </div>
-         <div class="modal-footer">
-           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-         </div>
-       </div>
-
-     </div>
-   </div>
+        <!-- Init Modal-->
+        <div id="initModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Welcome to the friend-finder survey. Please fill out all the fields to receive your results.</h4>
+                        <h3><i>Each question is measure on a scale of 1-5. 1 means you strongly disagree, 5 means you strongly agree</i></h3>
+                    </div>
+                    <div class="init-modal-body">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Match Modal-->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Thank you for filling out our survey. Your Match is...</h4>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 <script type="text/javascript">
-  $("initModal").modal("show")
+$("#initModal").modal("show")
+
+
 $("#submit").on("click", function(event) {
+    var answer1 = $("#question1").val().trim()
+    var answer2 = $("#question2").val().trim()
+    var answer3 = $("#question3").val().trim()
+    var answer4 = $("#question4").val().trim()
+    var answer5 = $("#question5").val().trim()
+    var answer6 = $("#question6").val().trim()
+    var answer7 = $("#question7").val().trim()
+    var answer8 = $("#question8").val().trim()
+    var answer9 = $("#question9").val().trim()
+    var answer10 = $("#question10").val().trim()
 
     var newMatch = {
         name: $("#name").val().trim(),
         photo: $("#photo").val().trim(),
-        scores: [
-            $("#question1").val().trim(), 
-            $("#question2").val().trim(), 
-            $("#question3").val().trim(), 
-            $("#question4").val().trim(), 
-            $("#question5").val().trim(), 
-            $("#question1").val().trim(), 
-            $("#question6").val().trim(), 
-            $("#question7").val().trim(), 
-            $("#question8").val().trim(), 
-            $("#question9").val().trim(), 
-            $("#question10").val().trim()
+        "scores": [
+            parseInt(answer1),
+            parseInt(answer2),
+            parseInt(answer3),
+            parseInt(answer4),
+            parseInt(answer5),
+            parseInt(answer6),
+            parseInt(answer7),
+            parseInt(answer8),
+            parseInt(answer9),
+            parseInt(answer10)
         ]
 
     };
 
-    $.post("/api/new", newMatch)
-    $("#myModal").modal("show")
+    $.post("/api/new", newMatch);
+    getMatch()
+    $("#myModal").modal("show");
 })
 
-$.get()
+function getMatch() {
+    $.get("/api/match", function(data) {
+      console.log("getMatch")
+      var matchPic = data[0]
+      var matchName = data[1]
+      
+      $(".modal-body").html('<img src="'+ matchPic +'"><h2>' + matchName +'</h2>')
+    });
+}    
 </script>
 
 </html>

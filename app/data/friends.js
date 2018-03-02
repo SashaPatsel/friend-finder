@@ -2,7 +2,7 @@ var friends = [
 
 {
   "name":"Bear",
-  "photo":"../../images/bear.jpg",
+  "photo":"./images/bear.jpg",
   "scores":[
       5,
       1,
@@ -17,7 +17,7 @@ var friends = [
     ]
 }, {
     "name":"Tiger",
-  "photo":"../../images/tiger.jpeg",
+  "photo":"./images/tiger.jpeg",
   "scores":[
       2,
       4,
@@ -33,7 +33,7 @@ var friends = [
 
 },{
   "name":"Dog",
-  "photo":"../../images/dog.jpeg",
+  "photo":"./images/dog.jpeg",
   "scores":[
       1,
       5,
@@ -48,7 +48,7 @@ var friends = [
     ]
 },{
   "name":"Cat",
-  "photo":"../../images/cat.jpeg",
+  "photo":"./images/cat.jpeg",
   "scores":[
       2,
       4,
@@ -63,7 +63,7 @@ var friends = [
     ]
 },{
   "name":"Horse",
-  "photo":"../../images/horse.jpg",
+  "photo":"./images/horse.jpg",
   "scores":[
       4,
       4,
@@ -78,7 +78,7 @@ var friends = [
     ]
 },{
   "name":"Lion",
-  "photo":"../../images/lion.png",
+  "photo":"./images/lion.png",
   "scores":[
       3,
       2,
@@ -93,7 +93,7 @@ var friends = [
     ]
 },{
   "name":"Eagle",
-  "photo":"../../images/eagle2.jpg",
+  "photo":"./images/eagle2.jpg",
   "scores":[
       4,
       4,
@@ -108,7 +108,7 @@ var friends = [
     ]
 },{
   "name":"Shark",
-  "photo":"../../images/shark.jpg",
+  "photo":"./images/shark.jpg",
   "scores":[
       2,
       2,
@@ -123,7 +123,7 @@ var friends = [
     ]
 },{
   "name":"Giraffe",
-  "photo":"../../images/giraffe.jpg",
+  "photo":"./images/giraffe.jpg",
   "scores":[
       5,
       5,
@@ -138,7 +138,7 @@ var friends = [
     ]
 },{
   "name":"Weasel",
-  "photo":"../../images/weasel.jpg",
+  "photo":"./images/weasel.jpg",
   "scores":[
       2,
       2,
